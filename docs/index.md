@@ -1,8 +1,8 @@
-# Platform Optimization SDK for Citrix Receiver for Linux 13.9.1
+# Platform Optimization SDK for Citrix Receiver for Linux 13.10
 
 # Compatibility with Receiver 
 
-This is Version 13.9.1 of the Platform Optimization SDK. It is intended for use with Linux Receiver builds in the 13.9.1 series. There are separate versions of the SDK for each of the released architectures (X86, X86_64 and ARMhf) that differ only in the included binaries. 
+This is Version 13.10 of the Platform Optimization SDK. It is intended for use with Linux Receiver builds in the 13.10 series. There are separate versions of the SDK for each of the released architectures (X86, X86_64 and ARMhf) that differ only in the included binaries. 
 
 # Who should use this SDK? 
 
