@@ -1,8 +1,8 @@
-# Platform Optimization SDK for Citrix Receiver for Linux 13.9.1
+# Platform Optimization SDK for Citrix Receiver for Linux 13.10
 
 # Compatibility with Receiver 
 
-This is Version 13.9.1 of the Platform Optimization SDK. It is intended for use with Linux Receiver builds in the 13.9.1 series. There are separate versions of the SDK for each of the released architectures (X86, X86_64 and ARMhf) that differ only in the included binaries. 
+This is Version 13.10 of the Platform Optimization SDK. It is intended for use with Linux Receiver builds in the 13.10 series. There are separate versions of the SDK for each of the released architectures (X86, X86_64 and ARMhf) that differ only in the included binaries. 
 
 # Who should use this SDK? 
 
@@ -24,7 +24,7 @@ There is also a UI Dialog abstraction which allows for the implementation of cor
 
 XenDesktop version 6 and later support a protocol for presenting the remote session's graphics that uses a combination of H.264 and a proprietary lossless graphics encoding. For maximum flexibility in exploiting on-chip decoders and hardware rendering support, plugins take full control of the decoding, overlay and rendering process. 
 
-The details of the interface for these plugins are documented as comments in the relevant header file, **H264_decode.h**, with an unaccelerated sample implementation in the H264\_sample directory. The sample code (**H264\_sample**) is wfica's fallback implementation that is used when no accelerated plugin is available. Build a plugin named **ctxh264_fb.so**. Rename this plugin as **ctxh264.so** and place it in **$ICAROOT/lib** to override other H264 plugins. The decoder provided contains stub functions which do no drawing. The sample serves as a template to begin work with. 
+The details of the interface for these plugins are documented as comments in the relevant header file, **H264\_decode.h**, with an unaccelerated sample implementation in the H264\_sample directory. The sample code (**H264\_sample**) is wfica's fallback implementation that is used when no accelerated plugin is available. Build a plugin named **ctxh264_fb.so**. Rename this plugin as **ctxh264.so** and place it in **$ICAROOT/lib** to override other H264 plugins. The decoder provided contains stub functions which do no drawing. The sample serves as a template to begin work with. 
 
 The sample code (**H264\_Pi\_sample**) is a Raspberry Pi implementation and is provided as a reference hardware implementation. 
 
