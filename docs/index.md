@@ -1,8 +1,8 @@
-# Platform Optimization SDK for Citrix Workspace app 1808 for Linux
+# Platform Optimization SDK for Citrix Workspace app 1809 for Linux
 
 # Compatibility with Workspace app 
 
-This is Version 1808 of the Platform Optimization SDK. It is intended for use with Linux Workspace app builds in the 1808 series. There are separate versions of the SDK for each of the released architectures (X86, X86_64 and ARMhf) that differ only in the included binaries. 
+This is Version 1809 of the Platform Optimization SDK. It is intended for use with Linux Workspace app builds in the 1809 series. There are separate versions of the SDK for each of the released architectures (X86, X86_64 and ARMhf) that differ only in the included binaries. 
 
 # Who should use this SDK? 
 
