@@ -1,5 +1,5 @@
-site_name: Platform Optimization SDK for Citrix Workspace app 1809 for Linux
-site_description: Reference guide for Platform Optimization SDK for Citrix Workspace app 1809 for Linux
+site_name: Platform Optimization SDK for Citrix Workspace app for Linux
+site_description: Reference guide for Platform Optimization SDK for Citrix Workspace app for Linux
 theme_dir: citrix-sdk
 markdown_extensions:
   - admonition
