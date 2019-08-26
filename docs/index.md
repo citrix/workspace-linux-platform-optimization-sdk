@@ -62,13 +62,15 @@ The HDX Multimedia feature can be used with accelerated plugins for X11 and plug
 
 # UI dialog library  
 
-The UI Dialog Library (**UIDialogLib.so**) implements an abstraction layer for the display of dialogs. A dialog's contents are dependent on the contents of the C formsElement structures passed (The formsElement structures are declared in **UI\_if.h** in the toplevel inc directory). The dialog is built dynamically according to the given information in these structures and rendered. The formsElements themselves are essentially label and widget pairs, where the widget can be a text entry box, check box, set of radio buttons, combo box, multi combo box, button, hyperlink expander, scrolled view, selection table, button box, or another label. 
+The UI Dialog Library (**UIDialogLib.so**, **UIDialogLibWebKit3.so**) implements an abstraction layer for the display of dialogs. A dialog's contents are dependent on the contents of the C formsElement structures passed (The formsElement structures are declared in **UI\_if.h** in the toplevel inc directory). The dialog is built dynamically according to the given information in these structures and rendered. The formsElements themselves are essentially label and widget pairs, where the widget can be a text entry box, check box, set of radio buttons, combo box, multi combo box, button, hyperlink expander, scrolled view, selection table, button box, or another label. 
 
 The UI Dialog Library is used for the majority of dialogs within the Linux Workspace app processes, including the X11 based wfica. The processes storebrowse, AuthManager, PrimaryAuthManager, and ServiceRecord use it for all of their UI. The purpose is to ensure that the UI of these essential processes can be replaced with a UI toolkit of your choosing by re-implementing the library. The current implementation of the UI Dialog Library distributed with the Linux Workspace app is GTK+. The code for this implementation is provided under the UIDialogLib/GTK directory in this SDK as an example.  
 
 The self-service, configmgr, and X11 wfica binaries require GTK+ for other aspects of their UI other than dialogs and therefore cannot be used with a different implementation of the UI Dialog Library than the provided GTK+ implementation. However, all of their functionality is available via the storebrowse command line interface and the configuration files. 
 
 A selection of examples is provided under the UIDialogLib/test directory to showcase some of the widgets and dialogs that may be seen.  For information on the interface itself please read the UIDialogLib.h header in the UIDailogLib/inc directory.  
+
+The SDK includes UI Dialog libraries using libwebkit2gtk (2.16.6). The newly added libraries are **UIDialogLibWebKit3.so** and **UIDialogLibWebKit3_ext.so.** For instructions on getting started with the UI Dialog library, see the Readme in the UIDialogLib3 directory.
 
 # Using the test harness for KVME plugins 
 
